@@ -304,7 +304,7 @@ void readinfo(manage_lib *lib)
     system("cls");
     puts("input the manage information:\nname number sex bumen");
     char a[16],b[32],c,d[32];
-    fscanf(ifp,"%s %s %c %s",a,b,&c,d);
+    fscanf(stdin,"%s %s %c %s",a,b,&c,d);
     lib->add_manage(manage(a,b,c=='m'?1:0,d));
 }
 
